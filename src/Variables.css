@@ -1,0 +1,29 @@
+:root {
+    --color: green;
+    --fs-tiny: 15px; 
+    --fs-small: 18px; 
+    --fs-medium: 20px; 
+    --fs-big: 25px; 
+}
+
+/* lap */
+@media (min-width: 500px) {
+    :root {
+        --fs-tiny: 20px; 
+        --fs-small: 22px; 
+        --fs-medium: 36px; 
+        --fs-big: 40px; 
+        --fs-very-big: 48px; 
+    }
+}
+
+/* des */
+@media (min-width: 1700px) {
+    :root {
+        --fs-tiny: 20px; 
+        --fs-small: 24px; 
+        /* --fs-medium: 36px; 
+        --fs-big: 45px;  */
+        --fs-very-big: 70px; 
+    }
+}
