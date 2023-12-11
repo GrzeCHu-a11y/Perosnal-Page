@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./Projects.module.scss";
+import SectionHeader from "../molecules/sectionHeader/SectionHeader";
 
 const Projects = () => {
   return (
     <section className={styles.projects}>
-      <h1 className={styles.h1}>PRFDIUDFIF</h1>
+      <SectionHeader h2={"PROJECTS"} p={"Some of Games , Pages and Design projects"} />
     </section>
   );
 };
