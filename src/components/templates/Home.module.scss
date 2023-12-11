@@ -71,6 +71,12 @@
 
 //des
 @media (min-width: 1700px) {
+
+    .home {
+        padding-top: 8rem;
+        min-height: 90vh;
+    }
+
    .h1 {
     font-size: 100px;
    }
@@ -82,6 +88,11 @@
    .techstackContainer {
     .item {
         padding: 0 35px;
+
+        .img {
+            width: 55px;
+            height: 55px;
+        }
     }
 }
 }
