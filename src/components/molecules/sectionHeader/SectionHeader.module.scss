@@ -1,0 +1,17 @@
+@import "/src/Variables.css";
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+
+    .h2 {
+        font-weight: 500;
+        font-size: var(--fs-medium);
+    }
+
+    .p {
+        padding: 0.6rem;
+        font-size: var(--fs-small);
+    }
+}
