@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./ProjectCard.module.scss";
 import "boxicons";
 
-const ProjectCard = ({ src, projectName, description, demolink, gitlink, tech }) => {
+const ProjectCard = ({ src, projectName, description, demolink, gitlink, tech, id }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} key={id}>
       <div className={styles.imgContainer}>
         <img className={styles.img} src={src} alt="" />
       </div>
