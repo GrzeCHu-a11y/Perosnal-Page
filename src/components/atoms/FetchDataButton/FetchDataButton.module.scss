@@ -1,0 +1,9 @@
+@import "/src/Variables.css";
+
+.btn {
+    font-size: var(--fs-small);
+    padding: 5px;
+    margin: 2rem;
+    border: 1ps solid black;
+    cursor: pointer;
+}

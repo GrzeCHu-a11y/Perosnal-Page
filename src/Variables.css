@@ -7,6 +7,7 @@
 /* lap */
 @media (min-width: 1000px) {
     :root {
+        --fs--special-small: 1.2rem;
         --fs-small: 1.4rem; 
         --fs-medium: 2.25rem; 
         --fs-big: 3rem; 
