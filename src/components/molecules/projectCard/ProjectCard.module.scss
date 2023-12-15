@@ -1,0 +1,82 @@
+@import "src/Variables.css";
+.card {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    min-height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+
+    .img {
+        width: 100%;
+        height: 25vh;
+    }
+
+    .h3 {
+        margin: 1.6rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .p {
+        font-size: var(--fs-small);
+        font-weight: 300;
+    }
+
+    .linksContainer {
+        margin: 1.6rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        flex-direction: row;
+
+        .p {
+            font-size: var(--fs--special-small);
+        }
+
+        .imgContainer {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .img {
+                width: 90%;
+                height: 80%;
+            }
+        }
+    
+        .textContainer {
+            width: 50%;
+            padding-left: 1rem;
+            text-align: left;
+    
+            .linksContainer {
+                justify-content: flex-start;
+    
+                .item:nth-child(2) {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+
+    
+
+    
+}

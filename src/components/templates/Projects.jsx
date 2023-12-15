@@ -23,7 +23,7 @@ const Projects = () => {
       {projects.map((project) => (
         <ProjectCard
           projectName={project.title}
-          src={project.image}
+          src={project.image.url}
           description={project.description}
           demolink={project.demolink}
           gitlink={project.gitlink}

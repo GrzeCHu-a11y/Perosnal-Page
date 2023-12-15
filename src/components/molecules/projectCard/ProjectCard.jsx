@@ -1,15 +1,28 @@
 import React from "react";
 import styles from "./ProjectCard.module.scss";
+import "boxicons";
 
 const ProjectCard = ({ src, projectName, description, demolink, gitlink, tech }) => {
   return (
     <div className={styles.card}>
-      <img className={styles.img} src={src} alt="" />
-      <h2>{projectName}</h2>
-      <p>{description}</p>
-      <a href={gitlink}></a>
-      <a href={demolink}></a>
-      <p>{tech}</p>
+      <div className={styles.imgContainer}>
+        <img className={styles.img} src={src} alt="" />
+      </div>
+      <div className={styles.textContainer}>
+        <h3 className={styles.h3}>{projectName}</h3>
+        <p className={styles.p}>{description}</p>
+        <div className={styles.linksContainer}>
+          <a href={gitlink} target="blank" className={styles.item}>
+            <p>Code</p>
+            <box-icon type="logo" name="github" size="md"></box-icon>
+          </a>
+          <a href={demolink} target="blank" className={styles.item}>
+            <p>Live Demo</p>
+            <box-icon name="link-external" size="md"></box-icon>
+          </a>
+        </div>
+        <p>{tech}</p>
+      </div>
     </div>
   );
 };
