@@ -14,6 +14,7 @@ export const HOMEPAGE_QUERY = `query HomePage($limit: IntType) {
       tech
       gitlink
       demolink
+      projecttype
       image {
         id
         url
