@@ -1,4 +1,6 @@
 :root {
+    --fs--very-small: 0.6rem;
+    --fs--special-small: 0.9rem;
     --fs-small: 1.1rem; 
     --fs-medium: 1.8rem; 
     --fs-big: 25px; 
@@ -7,6 +9,7 @@
 /* lap */
 @media (min-width: 1000px) {
     :root {
+        --fs--very-small: 0.9rem;
         --fs--special-small: 1.2rem;
         --fs-small: 1.4rem; 
         --fs-medium: 2.25rem; 

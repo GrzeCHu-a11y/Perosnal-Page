@@ -36,8 +36,7 @@ const Projects = () => {
   return (
     <section className={styles.projects}>
       <SectionHeader h2={"PROJECTS"} p={"Some of Games , Pages and Design projects"} />
-      <ProjectsFilter fn={handleFilterChange} />
-      <h3>{filter}</h3>
+      <ProjectsFilter fn={handleFilterChange} active={filter} />
       {filteredProjects.map((project, id) => (
         <ProjectCard
           projectName={project.title}
