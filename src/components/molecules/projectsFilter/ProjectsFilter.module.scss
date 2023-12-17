@@ -1,0 +1,24 @@
+@import "/src/Variables.css";
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    .button {
+        padding: 10px;
+        font-size: var(--fs-very-small);
+        cursor: pointer;
+    }
+
+    .buttonActive {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: var(--fs-very-small);
+    }
+}
