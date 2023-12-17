@@ -2,26 +2,14 @@ import React, { useState, useEffect } from "react";
 import styles from "./Projects.module.scss";
 import SectionHeader from "../molecules/sectionHeader/SectionHeader";
 import ProjectCard from "../molecules/projectCard/ProjectCard";
-import { useQuery } from "graphql-hooks";
-import { HOMEPAGE_QUERY } from "../../api/Client";
+import UseProjectsQuery from "../../hooks/UseProjectsQuery";
 import FetchDataButton from "../atoms/FetchDataButton/FetchDataButton";
 import ProjectsFilter from "../molecules/projectsFilter/ProjectsFilter";
 
 const Projects = () => {
   const [limit, setLimit] = useState(3);
-  const [projects, setProjects] = useState([]);
+  const { projects } = UseProjectsQuery(limit);
   const [filter, setFilter] = useState("all");
-  const { loading, error, data } = useQuery(HOMEPAGE_QUERY, {
-    variables: {
-      limit,
-    },
-  });
-
-  useEffect(() => {
-    if (data && data.allCards) {
-      setProjects(data.allCards);
-    }
-  }, [data]);
 
   const handleLoadMore = () => {
     setLimit((prevLimit) => prevLimit + 3);
