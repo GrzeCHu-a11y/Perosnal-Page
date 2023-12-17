@@ -3,7 +3,7 @@ import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
-    <section className={styles.home}>
+    <section className={styles.home} id="home">
       <h1 className={styles.h1}>
         Hi I’m Grzegorz <br /> <span className={styles.specialLetters}>Full Stack Web Developer</span>
       </h1>

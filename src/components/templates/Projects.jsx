@@ -34,7 +34,7 @@ const Projects = () => {
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.projecttype === filter);
 
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="projects">
       <SectionHeader h2={"PROJECTS"} p={"Some of Games , Pages and Design projects"} />
       <ProjectsFilter fn={handleFilterChange} active={filter} />
       {filteredProjects.map((project, id) => (

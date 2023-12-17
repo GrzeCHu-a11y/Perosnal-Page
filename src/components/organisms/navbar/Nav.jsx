@@ -24,13 +24,13 @@ const Nav = () => {
         </label>
 
         <nav className={isMenuOpen ? `${styles.navbar} ${styles.active}` : styles.navbar}>
-          <a href="#" className={styles.item}>
+          <a href="#home" className={styles.item}>
             Home
           </a>
-          <a href="#" className={styles.item}>
+          <a href="#projects" className={styles.item}>
             Projects
           </a>
-          <a href="#" className={styles.item}>
+          <a href="#contact" className={styles.item}>
             Contact
           </a>
         </nav>

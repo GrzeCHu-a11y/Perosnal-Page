@@ -4,7 +4,7 @@ import styles from "./Contact.module.scss";
 
 const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <SectionHeader h2={"CONTACT ME"} p={"Would you like to get in touch? Feel free to message me"} />
       <div className={styles.container}>
         <a className={styles.img} href="https://www.linkedin.com/in/grzegorz-go%C5%84czowski-b3942b272/" target="blank">
