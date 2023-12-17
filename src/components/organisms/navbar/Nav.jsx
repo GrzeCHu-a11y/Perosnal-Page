@@ -24,13 +24,13 @@ const Nav = () => {
         </label>
 
         <nav className={isMenuOpen ? `${styles.navbar} ${styles.active}` : styles.navbar}>
-          <a href="#home" className={styles.item}>
+          <a href="#home" className={styles.item} onClick={() => setMenu(!isMenuOpen)}>
             Home
           </a>
-          <a href="#projects" className={styles.item}>
+          <a href="#projects" className={styles.item} onClick={() => setMenu(!isMenuOpen)}>
             Projects
           </a>
-          <a href="#contact" className={styles.item}>
+          <a href="#contact" className={styles.item} onClick={() => setMenu(!isMenuOpen)}>
             Contact
           </a>
         </nav>
