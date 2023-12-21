@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./ProjectsFilter.module.scss";
 
 const ProjectsFilter = ({ fn, active }) => {
-  console.log(active);
   return (
     <div className={styles.container}>
       <button className={active === "all" ? styles.buttonActive : styles.button} onClick={() => fn("all")}>
