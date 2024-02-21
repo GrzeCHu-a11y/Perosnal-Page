@@ -24,6 +24,7 @@ const ProjectsFilter = ({ fn, active, loadmore }) => {
         onClick={() => {
           fn("design");
           loadmore();
+          loadmore();
         }}
       >
         Design
