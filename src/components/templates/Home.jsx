@@ -33,9 +33,6 @@ const Home = () => {
           <img className={styles.img} src="/php.png" alt="" />
         </div>
         <div className={styles.item}>
-          <img className={styles.img} src="/next-js.256x256.png" alt="" />
-        </div>
-        <div className={styles.item}>
           <img className={styles.img} src="/icons8-mysql-96.png" alt="" />
         </div>
         <div className={styles.item}>
